@@ -1,0 +1,113 @@
+/****************** About Section Start ******************/
+/* Section Styles */
+.info-section {
+  position: relative;
+  top:79px;
+  background-color:var(--bg-color);
+  border-radius: 12px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); */
+  margin: 40px 20px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color:var(--text-color);
+}
+/****************** About Section End ******************/
+
+/****************** Strategies Section start ******************/
+   
+    .main-section {
+      position: relative;
+      top: 79px;
+      display: flex;
+      width: 100%;
+      min-height: 400px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    /* Left Block */
+    .left-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-right: 20px;
+    }
+
+    .top-section {
+      display: flex;
+      gap: 20px;
+    }
+
+    .sub-section {
+      flex: 1;
+      background-color: var(--bg-color);
+      box-shadow: black;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .sub-section h2 {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .sub-section p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .strategy {
+      background-color: var(--bg-color);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .strategy h2 {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .strategy p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* Right Block */
+    .right-block {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right-block img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .main-section {
+        flex-direction: column;
+      }
+      .left-block {
+        padding-right: 0;
+      }
+      img{
+        padding-top: 20px;
+        border-radius: 20px;
+      }
+    }
+
+/****************** Strategies Section End ******************/

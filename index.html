@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>AMBIOINC</title>
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body>
+    <div class="all-page-wrapper">
+        <!-- Header Section Start -->
+        <header class="header">
+            <div class="main-navigation">
+                <div class="container">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="./images/Absinc-logo-footer.svg" alt="Abs Inc" width="160">
+                        </a>
+                    </div>
+
+                    <div class="mobile-toggle" id="mobile-menu-toggle">
+                        <span></span><span></span><span></span>
+                    </div>
+
+                    <nav class="primary-nav">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a href="./index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="./pages/about.html" class="nav-link">About</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/products.html" class="nav-link">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/service.html" class="nav-link">Services</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/news.html" class="nav-link">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/investor.html" class="nav-link">Investors</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Header Section End -->
+
+        <!-- Slider Section Start -->
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="card" style="background-image: url('https://via.placeholder.com/300x500?text=Card+1');">
+                    <button>Pharmaceuticals</button>
+                </div>
+                <div class="card" style="background-image: url('https://via.placeholder.com/300x500?text=Card+2');">
+                    <button>Vaccines</button>
+                </div>
+                <div class="card" style="background-image: url('https://via.placeholder.com/300x500?text=Card+3');">
+                    <button>Biologics</button>
+                </div>
+                <div class="card" style="background-image: url('https://via.placeholder.com/300x500?text=Card+2');">
+                    <button>Biosimilars</button>
+                </div>
+                <div class="card" style="background-image: url('https://via.placeholder.com/300x500?text=Card+3');">
+                    <button>Genomic  Diagnostics</button>
+                </div>
+            </div>
+
+            <!-- Arrows -->
+            <div class="nav-buttons">
+                <button onclick="prevSlide()">⟵</button>
+                <button onclick="nextSlide()">⟶</button>
+            </div>
+
+            <!-- Dots -->
+            <div class="dots" id="dots"></div>
+        </div>
+        <!-- Slider Section End -->
+
+        <!-- World Map Section Start -->
+        <div class="map">
+            <h2 class="section-heading">Map</h2>
+            <img title="img" src="https://t3.ftcdn.net/jpg/08/07/71/02/360_F_807710259_VvqXLk02PBer9FkAFWa00xx9XyKxFqGS.jpg"/>
+        </div>
+        <!-- World Map Section Start -->
+        
+        <!-- Contact Section Start -->           
+        <section class="contact-section">
+            <!-- Left Side: Contact Form -->
+            <div class="left-form">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required />
+                <input type="tel" placeholder="Phone Number" required />
+                <input type="email" placeholder="Email ID" required />
+
+                <select id="serviceDropdown" title="services" required>
+                    <option value="">Select a Service</option>
+                    <option value="Pharmaceuticals">Pharmaceuticals</option>
+                    <option value="Vaccines">Vaccines</option>
+                    <option value="Biologics">Biologics</option>
+                    <option value="Biosimilars">Biosimilars</option>
+                    <option value="Genomic">Genomic Diagnostics</option>
+                </select>
+
+                <select id="productDropdown" title="products" required>
+                    <option value="">Select a Product</option>
+                </select>
+
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+
+            <!-- Right Side: Contact Info -->
+            <div class="right-info">
+            <div class="info-item">
+                <h3>📞 Phone</h3>
+                <p>+91 98765 43210</p>
+            </div>
+            <div class="info-item">
+                <h3>📍 Address</h3>
+                <p>123, Business Avenue, Hyderabad, India</p>
+            </div>
+            <div class="info-item">
+                <h3>📧 Email</h3>
+                <p>contact@yourcompany.com</p>
+            </div>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+    <script>
+        const slider = document.getElementById('slider');
+        const cards = slider.children;
+        const totalCards = cards.length;
+        const dotsContainer = document.getElementById('dots');
+        let currentIndex = 0;
+
+        function updateSlider() {
+        // Remove active classes
+        [...cards].forEach(card => card.classList.remove('active'));
+        // Set active card
+        cards[currentIndex].classList.add('active');
+
+        // Move slider
+        const offset = (cards[0].offsetWidth + 20) * (currentIndex - 1);
+        slider.style.transform = `translateX(${-offset}px)`;
+
+        // Update dots
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+        }
+
+        function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalCards;
+        updateSlider();
+        }
+
+        function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+        updateSlider();
+        }
+
+        function createDots() {
+        for (let i = 0; i < totalCards; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+            currentIndex = i;
+            updateSlider();
+            });
+            dotsContainer.appendChild(dot);
+        }
+        }
+
+        // Auto-slide every 10 sec
+        setInterval(nextSlide, 10000);
+
+        // Initial
+        createDots();
+        updateSlider();
+    </script>
+
+
+    <!-- Script Sheet -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
