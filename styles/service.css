@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #000;
+  background-color: white;
   font-family: sans-serif;
   /* overflow: hidden; */
 }
@@ -36,10 +36,11 @@ button {
   max-width: 200px;
   padding: 0.5rem;
   font-size: clamp(0.6rem, 1vw, 1rem);
-  background-color: #00ffff;
+  background-color: rgb(243, 50, 50);
+  /* background-color: rgb(50, 73, 206); */
   border: none;
   border-radius: 6px;
-  color: #000;
+  color: #fff;
   font-weight: bold;
   pointer-events: auto;
   transform: translateY(-50%);

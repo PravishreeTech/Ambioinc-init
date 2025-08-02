@@ -7,7 +7,7 @@
 
 /* Color change */
 :root {
-    --primary-color: #2d7020;     /* Your header/nav background */
+    --primary-color: rgb(52, 79, 231);     /* Your header/nav background */
     --hover-color: #3bec17;       /* Link hover effect */
     --text-color: #333;           /* Default body text */
     --bg-color: #fff;             /* Body background */

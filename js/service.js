@@ -76,18 +76,19 @@ function draw() {
 
     ctx.beginPath();
     ctx.arc(x1, y, 5, 0, Math.PI * 2);
-    ctx.fillStyle = "cyan";
+    ctx.fillStyle = "red";
     ctx.fill();
 
     ctx.beginPath();
     ctx.arc(x2, y, 5, 0, Math.PI * 2);
-    ctx.fillStyle = "magenta";
+    ctx.fillStyle = "blue";
     ctx.fill();
 
     ctx.beginPath();
     ctx.moveTo(x1, y);
     ctx.lineTo(x2, y);
-    ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+    // ctx.strokeStyle = "rgba(255, 255, 255, 0.2)";
+    ctx.strokeStyle = "black";
     ctx.stroke();
   });
 
