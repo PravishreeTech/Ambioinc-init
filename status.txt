@@ -3,6 +3,9 @@
 01-08-2025: 1st Draft Ready
 
 02-08-2025:
-Map size is set in all devices
-Services Page is added
-Footer is modified
+Map size is set in all devices  - Yatheswar
+Services Page is added          - Yassasswini
+Footer is modified              - Yassasswini
+
+Footer in Service Page is set   - Yatheswar
+

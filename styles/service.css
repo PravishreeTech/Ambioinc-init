@@ -112,3 +112,7 @@ button {
   text-align: center;
 }
 /****************** Services Section End ******************/
+.footer{
+  position: relative;
+  top: 980px;
+}
