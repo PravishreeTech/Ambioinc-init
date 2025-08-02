@@ -7,3 +7,7 @@ Map size is set in all devices  - Yatheswar
 Services Page is added          - Yassasswini
 Footer is modified              - Yassasswini
 
+Footer set in Service Page      - Yatheswar
+Set same Footer in all Pages    - Yatheswar
+Investor Page is set correctly  - Yatheswar
+
