@@ -3,5 +3,6 @@
 01-08-2025: 1st Draft Ready
 
 02-08-2025:
+Map size is set in all devices
 Services Page is added
 Footer is modified
