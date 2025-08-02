@@ -1,1 +1,113 @@
-/****************** Header Section Start ******************/
+/****************** Services Section Start ******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: sans-serif;
+  /* overflow: hidden; */
+}
+
+canvas {
+  position: fixed;
+  top: 79px;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#buttons-container {
+  position: absolute;
+  top: 79px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+button {
+  position: absolute;
+  width: 40vw;
+  max-width: 200px;
+  padding: 0.5rem;
+  font-size: clamp(0.6rem, 1vw, 1rem);
+  background-color: #00ffff;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-weight: bold;
+  pointer-events: auto;
+  transform: translateY(-50%);
+  white-space: normal;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: top 0.2s ease;
+}
+
+#popup-box {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.4); dim background */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 1rem;
+}
+
+.popup-content {
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 90vw;
+  text-align: center;
+  /* max-height: 80vh; */
+  height: 400px;
+  width: 300px;
+  overflow-y: auto;
+  position: absolute;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+.popup-left {
+  left: 5%;
+}
+
+.popup-right {
+  right: 5%;
+}
+
+@media (max-width: 768px) {
+  .popup-content {
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000;
+}
+
+#popup-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  text-align: center;
+}
+/****************** Services Section End ******************/
