@@ -7,5 +7,3 @@ Map size is set in all devices  - Yatheswar
 Services Page is added          - Yassasswini
 Footer is modified              - Yassasswini
 
-Footer in Service Page is set   - Yatheswar
-
