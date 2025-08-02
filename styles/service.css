@@ -1,16 +1,8 @@
 /****************** Services Section Start ******************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section{
+  position: relative;
+  top: 79px;
 }
-
-body {
-  background-color: white;
-  font-family: sans-serif;
-  /* overflow: hidden; */
-}
-
 canvas {
   position: fixed;
   top: 79px;
@@ -36,7 +28,7 @@ button {
   max-width: 200px;
   padding: 0.5rem;
   font-size: clamp(0.6rem, 1vw, 1rem);
-  background-color: rgb(243, 50, 50);
+  background-color: #17A2B8 ;
   /* background-color: rgb(50, 73, 206); */
   border: none;
   border-radius: 6px;
@@ -112,7 +104,3 @@ button {
   text-align: center;
 }
 /****************** Services Section End ******************/
-.footer{
-  position: relative;
-  top: 980px;
-}
