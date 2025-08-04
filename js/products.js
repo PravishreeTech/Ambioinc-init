@@ -1,3 +1,5 @@
+  const popupTitle = document.getElementById("popup-title");
+  const popupDescription = document.getElementById("popup-description");
   const popup = document.getElementById("popup");
   const popupImg = document.getElementById("popup-img");
   const heading1 = document.getElementById("heading1");
@@ -74,6 +76,7 @@
     },
     "GENOMIC DIAGNOSTICS": {
       title : "GENOMIC DIAGNOSTICS",
+      description : "Genomic Diagnostics is a DBA of ABS Inc., headquartered in New Jersey, USA and operations in Pennsylvanian. We have been conducting research, product development, manufactures bacterial and viral diagnostic kits, reagents, reference standards for medical diagnostic applications.",
       image: "../images/p5.png",
       heading1: "Research & Development",
       points1: [
@@ -95,6 +98,11 @@
     const data = popupData[buttonText];
     if (!data) return;
 
+    // Set top heading and description
+    popupTitle.textContent = data.title;
+    popupDescription.textContent = data.description;
+
+    // Set image and right section content
     popupImg.src = data.image;
     heading1.textContent = data.heading1;
     heading2.textContent = data.heading2;
