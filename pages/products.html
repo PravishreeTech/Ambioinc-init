@@ -75,30 +75,54 @@
             <div class="card">
                 <dotlottie-wc class="gif" src="https://lottie.host/6d0a7b2b-5e18-4310-8fc5-01987e441989/hMf2imQGAU.lottie"
                 speed="1" autoplay loop></dotlottie-wc>
-                Pharmaceuticals
+                <button class="button">PHARMACEUTICALS</button>
             </div>
             <div class="card">
                 <dotlottie-wc class="gif" src="https://lottie.host/88777050-b258-4342-a145-14aa3e431b57/RZOYDBNXX8.lottie"
                 speed="1" autoplay loop></dotlottie-wc>
-                Vaccines
+                <button class="button">VACCINES</button>
             </div>
             <div class="card">
                 <dotlottie-wc class="gif" src="https://lottie.host/f725f945-2605-4f24-a528-e9c1b3a407a7/pMtui2PpBN.lottie"
                 speed="1" autoplay loop></dotlottie-wc>
-                Biologics
+                <button class="button">BIOLOGICS</button>
             </div>
             <div class="card">
                 <dotlottie-wc class="gif" src="https://lottie.host/c30a5454-e3b4-4e63-ba3a-d3c7ff9016d7/Cca6IhIMRm.lottie"
                 style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
-                Biosimilars
+                <button class="button">BIOSIMILARS</button>
             </div>
             <div class="card">
                 <dotlottie-wc class="gif" src="https://lottie.host/57f2941a-2987-4128-af08-e5aa447815bf/m96ZrnCx1G.lottie"                    
                 speed="1" autoplay loop></dotlottie-wc>
-                Genomic Diagnostics
+                <button class="button">GENOMIC DIAGNOSTICS</button>
             </div>
+
+            <!-- Popup Modal -->
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <div class="popup-inner">
+                        <div class="popup-heading">
+                            <h2 id="heading"></h2>
+                        </div>
+                        <div class="popup-image">
+                            <img id="popup-img" src="" alt="Popup Image" />
+                        </div>
+                        <div class="popup-info">
+                            <h3 id="heading1"></h3>
+                            <ul id="points1"></ul>
+                            <h3 id="heading2"></h3>
+                            <ul id="points2"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
         <!-- Products Section End -->
+
 
         <!-- Footer Section Start -->
         <footer class="footer">
@@ -212,6 +236,7 @@
     </script>
     
     <!-- Script Sheet -->
+    <script src="../js/products.js"></script>
     <script src="../js/main.js"></script>
 </body>
 </html>

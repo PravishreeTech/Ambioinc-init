@@ -371,15 +371,36 @@ button {
   cursor: pointer;
 }
 
-.right-info h3 {
-  margin-bottom: 10px;
-  color: var(--text-color);
+.right-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center horizontally */
+  text-align: center;
+  gap: 20px; /* Space between the info blocks */
 }
 
 .info-item {
-  margin-bottom: 20px;
-  border-color: 0 20px #333;
+  /* background-color: #f9f9f9; */
+  padding: 5px;
+  border-left: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 300px;
 }
+
+.right-info h3 {
+  padding: 10px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+.contact-section h2 {
+  padding: 10px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
 
 @media (max-width: 768px) {
   .contact-section {
