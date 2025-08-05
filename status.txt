@@ -11,3 +11,9 @@ Footer set in Service Page      - Yatheswar
 Set same Footer in all Pages    - Yatheswar
 Investor Page is set correctly  - Yatheswar
 
+04-08-205:
+Products Page and Responsiveness - Yassasswini
+
+05-08-2025:
+Slider set in Home Page          - Yatheswar
+News Page                        - Yatheswar

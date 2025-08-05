@@ -7,11 +7,17 @@ toggleBtn.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
-////// SOLUTIONS TAB SECTION ///////////
-const buttons = document.querySelectorAll(".toggle-btn");
-const desktopContent = document.getElementById("main-content");
-const isMobile = () => window.innerWidth <= 768;
-
+////// HOME PAGE SLIDER SECTION ///////////
+$(document).ready(function () {
+    $('.card-row').carousel({
+        padding: 200
+    });
+    autoplay(); 
+    function autoplay() {
+        $('.card-row').carousel('next');
+        setTimeout(autoplay, 4500);
+    }
+});
 
 ////// INVESTORS - MAPS SECTION START ///////////
 // Google Maps JavaScript API
