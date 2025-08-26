@@ -10,7 +10,7 @@
   const popupData = {
     "PHARMACEUTICALS": {
       title : "PHARMACEUTICALS",
-      image: "../images/p1.png",
+      image: "./images/p1.png",
       heading1: "Research & Development",
       points1: [
         "We are developing innovative NDA’s & ANDA’s for in licensing & out licensing.",
@@ -28,7 +28,7 @@
     },
     "VACCINES": {
       title : "VACCINES",
-      image: "../images/p2.png",
+      image: "./images/p2.png",
       heading1: "Reasearch & Devolopment",
       points1: [
         "The company developed innovative proprietary cell line platform “Novacell” (an embryonic derived Stem Cells) for producing pure, high titer (potent) and cost-effective viral vaccines (preventable and therapeutic).",
@@ -45,7 +45,7 @@
     },
     "BIOLOGICS": {
       title : "BIOLOGICS",
-      image: "../images/p3.png",
+      image: "./images/p3.png",
       heading1: "Reasearch & Devolopment",
       points1: [
         "We developed Novacell proprietary platform technology for producing Innovative biologics for affordable, accessible and timely available products. ",
@@ -61,7 +61,7 @@
     },
     "BIOSIMILARS": {
       title : "BIOSIMILARS",
-      image: "../images/p4.png",
+      image: "./images/p4.png",
       heading1: "Research & Development",
       points1: [
         "Our Focus is to develop therapeutics for diabetics, cancer and infectious diseases.",
@@ -77,7 +77,7 @@
     "GENOMIC DIAGNOSTICS": {
       title : "GENOMIC DIAGNOSTICS",
       description : "Genomic Diagnostics is a DBA of ABS Inc., headquartered in New Jersey, USA and operations in Pennsylvanian. We have been conducting research, product development, manufactures bacterial and viral diagnostic kits, reagents, reference standards for medical diagnostic applications.",
-      image: "../images/p5.png",
+      image: "./images/p5.png",
       heading1: "Research & Development",
       points1: [
         "Molecular Diagnostics",

@@ -1,11 +1,18 @@
+
 /****************** Services Section Start ******************/
 .section{
   position: relative;
-  top: 79px;
+  top: 130px;
 }
+
+.sevice{
+  position: relative;
+  top: 10px;
+}
+
 canvas {
-  position: fixed;
-  top: 80px;
+  position: relative;
+  top: var(--relative-top);
   left: 0;
   z-index: 0;
   width: 100vw;
@@ -14,7 +21,7 @@ canvas {
 
 #buttons-container {
   position: absolute;
-  top: 79px;
+  top: var(--relative-top);
   left: 0;
   width: 100%;
   height: 100%;
@@ -107,5 +114,5 @@ button {
 
 .footer{
   position: relative;
-  top: 800px;
+  top: 120px;
 }
