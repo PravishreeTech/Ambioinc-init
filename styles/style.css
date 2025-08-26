@@ -481,7 +481,21 @@ body {
   transition: transform 0.6s ease-in-out;
   gap: 20px;
 }
-
+.carousel .carousel-item:nth-child(1){
+  background : url("../asserts/images/slider1.jpg") no-repeat center center/cover;
+}
+.carousel .carousel-item:nth-child(2){
+  background : url("../asserts/images/slider2.jpg") no-repeat center center/cover;
+}
+.carousel .carousel-item:nth-child(3){
+  background : url("../asserts/images/slider3.jpg") no-repeat center center/cover;
+}
+.carousel .carousel-item:nth-child(4){
+  background : url("../asserts/images/slider4.jpg") no-repeat center center/cover;
+}
+.carousel .carousel-item:nth-child(5){
+  background : url("../asserts/images/slider5.jpg") no-repeat center center/cover;
+}
 .carousel-item {
   width: 400px;
   height: 1000px;
@@ -502,7 +516,7 @@ body {
 .carousel-item.active {
   transform: scale(1.1);
   opacity: 1;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgb(10, 49, 97, 0.3);
   z-index: 2;
 }
 
@@ -510,15 +524,17 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgb(10, 49, 97, 0.6)
+;
 }
 
 .carousel-item button {
   position: relative;
   padding: 12px 24px;
-  font-size: 16px;
-  background-color: #00b4d8;
+  font-size: 18px;
+  background-color: var(--primary-color-1);
   color: #fff;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -529,40 +545,6 @@ body {
 .carousel-item:hover button {
   transform: scale(1.1);
 }
-
-/* .carousel .nav-buttons {
-  margin-top: 20px;
-}
-
-.carousel .nav-buttons button {
-  background-color: #00b4d8;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  margin: 0 10px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.dots {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ccc;
-  transition: background 0.3s;
-  cursor: pointer;
-}
-
-.dot.active {
-  background-color: #00b4d8;
-} */
 
 @media (max-width: 1000px) {
   .slider {
@@ -734,7 +716,7 @@ button {
 }
 
 .footer-left .brand {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -753,7 +735,7 @@ button {
 }
 .footer-middle h4,
 .footer-right h4 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -832,7 +814,7 @@ button {
 
 /* Developer Credit */
 .footer .final-copyright {
-    padding: 10px 0;
+    padding: 5px 0;
     background-color: var(--copyright-background);
 }
 
