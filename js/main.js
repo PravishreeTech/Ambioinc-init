@@ -7,60 +7,6 @@ toggleBtn.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
 
-// DNA Animation: Abstract helix with circles and lines
-const canvas = document.getElementById('dna-animation');
-const ctx = canvas.getContext('2d');
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = 280;
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-function drawDNA(time) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  const helixCount = 2;
-  const points = 30;
-  const width = canvas.width;
-  const height = canvas.height;
-  for (let h = 0; h < helixCount; h++) {
-    ctx.strokeStyle = h === 0 ? '#1da3be' : '#2673b9';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    for (let i = 0; i < points; i++) {
-      const x = (width / points) * i;
-      const y =
-        height / 2 +
-        Math.sin(i * 0.5 + h + time / 900) *
-        (48 + h * 12);
-      if (i === 0) ctx.moveTo(x, y);
-      else ctx.lineTo(x, y);
-    }
-    ctx.stroke();
-    // Draw moving nodes
-    for (let i = 0; i < points; i++) {
-      const x = (width / points) * i;
-      const y =
-        height / 2 +
-        Math.sin(i * 0.5 + h + time / 900) *
-        (48 + h * 12);
-      ctx.beginPath();
-      ctx.arc(
-        x,
-        y,
-        i % 3 === 0 ? 7 : 4,
-        0,
-        2 * Math.PI
-      );
-      ctx.fillStyle = h === 0
-        ? 'rgba(29,163,190,0.21)'
-        : 'rgba(38,115,185,0.18)';
-      ctx.fill();
-    }
-  }
-  requestAnimationFrame(drawDNA);
-}
-requestAnimationFrame(drawDNA);
 
 ////////////////////// HOME PAGE SLIDER SECTION //////////////////////
 $(document).ready(function () {

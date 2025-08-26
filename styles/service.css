@@ -35,8 +35,7 @@ button {
   max-width: 200px;
   padding: 0.7rem;
   font-size: clamp(0.6rem, 1vw, 1rem);
-  background-color: #17A2B8 ;
-  /* background-color: rgb(50, 73, 206); */
+  background-color: var(--primary-color-1) ;
   border: none;
   border-radius: 10px;
   color: #fff;
@@ -64,7 +63,7 @@ button {
 }
 
 .popup-content {
-  background-color: rgba(23, 162, 184, 0.8);
+  background-color: rgba(10, 49, 97,0.9);
   padding: 3rem;
   border-radius: 10px;
   max-width: 90vw;
@@ -101,12 +100,12 @@ button {
   right: 15px;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #000;
+  color: var(--bg-color);
 }
 
 #popup-text {
   font-size: 1rem;
-  color: #333;
+  color: var(--bg-color);
   line-height: 1.5;
   text-align: center;
 }

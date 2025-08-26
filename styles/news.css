@@ -4,7 +4,7 @@ a{
 
 .news-section {
     position: relative;
-    top: 86px;
+    top: var(--relative-top);
     width: 100%;
     min-height: 100vh;
     /* border: 3px solid red; */
