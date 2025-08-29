@@ -812,7 +812,7 @@ textarea {
   background: var(--footer-color);
   /* background: linear-gradient(135deg, var(--primary-color-1) 0%, #1e40af 100%); */
   color: white;
-  padding: var(--space-16) var(--space-8) var(--space-8);
+  padding: var(--space-8) var(--space-8) var(--space-8);
 }
 
 .footer-top {
@@ -955,9 +955,9 @@ textarea {
 }
 
 .footer .final-copyright {
-    padding: var(--space-4) 0;
+    padding: var(--space-1) 0;
     background: var(--bg-primary);
-    margin-top: var(--space-8);
+    margin-top: var(--space-2);
     border-radius: 12px;
 }
 
